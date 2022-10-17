@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./static/style.css" />
+  <title>Cheryl Qian</title>
+</head>
+  <body>
+
+    <nav>
+      <ul>
+        <div class="header">
+
+          <a href={{url_for('home')}} id='logo'><h1>Cheryl Qian</h1></a>
+          <span class="menu_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+
+        </div>
+
+        <div class="mobile_nav">
+          <li><a href={{url_for('about')}}>about me</a></li>
+          <li><a href={{url_for('resume')}} target=blank>resume</a></li>
+          <li><a href={{url_for('projects')}}>projects</a></li>
+          <li><a href="https://github.com/cheryl-qian" target=blank>github</a></li>
+        </div>
+
+        <div class="nav_items">
+        <li><a href={{url_for('about')}}>about me</a></li>
+        <li><a href={{url_for('resume')}} target=blank>resume</a></li>
+        <li><a href={{url_for('projects')}}>projects</a></li>
+        <li><a href="https://github.com/cheryl-qian" target=blank>github</a></li>
+        </div>
+
+      </ul>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+    <script src="./static/jquery-3.6.1.min.js"></script>
+    <script src="./static/script.js"></script>
+    </body>
+</html>
