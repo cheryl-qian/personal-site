@@ -25,6 +25,17 @@ body {
   font-family: 'open-sans';
 }
 
+.header {
+  display: flex;
+}
+
+.header img {
+  display: flex;
+  align-self: center;
+  margin-top: 1.5em;
+  width: 3em;
+  height: 3em;
+}
 
 
 #home_description h1 {
@@ -79,8 +90,7 @@ hr {
   flex-flow: column;
   align-self: center;
   text-align: center;
-  margin: 10vw;
-  margin-top: 5vw;
+  margin-top: 10%;
 }
 
 #home_description h2 {
@@ -186,7 +196,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   color: black;
-
+  margin: 3em;
 }
 
 
@@ -194,7 +204,7 @@ nav a:hover {
   display:flex;
 	width: 2em;
 	height: 2em;
-  margin: 5em;
+  margin: 2em;
 	box-sizing: border-box;
 	left: 50%;
 	top: 50%;
@@ -236,6 +246,7 @@ nav a:hover {
     max-width: 100%;
     text-align: center;
     margin: 15vw;
+    margin-top: 30%;
   }
 
   #home_description h1 {
@@ -316,8 +327,12 @@ nav a:hover {
     display: none;
   }
 
-  .nav_items li {
-    padding: 0.5em 0 0.5em 0;
+  .mobile_nav li a {
+    padding: 0;
+  }
+
+  .mobile_nav li a:hover {
+    color: black;
   }
 
   nav a {
@@ -348,4 +363,7 @@ nav a:hover {
     margin: 5vw;
   }
 
+  .header img {
+    display: none;
+  }
 }
