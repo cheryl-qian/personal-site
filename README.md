@@ -1,2 +1,2 @@
 # personal-site
-My portfolio website.
+My portfolio website. Currently deployed at www.cherylqian.com
